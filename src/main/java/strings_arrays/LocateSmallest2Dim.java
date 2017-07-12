@@ -1,4 +1,6 @@
-package string_arrays;
+package strings_arrays;
+
+import java.util.Random;
 
 
 import java.util.Random;
@@ -26,7 +28,6 @@ import java.util.Random;
 
 public class LocateSmallest2Dim {
     public static void main(String[] args) {
-
 
         Random rand = new Random();
         int n = rand.nextInt(30) + 1;
