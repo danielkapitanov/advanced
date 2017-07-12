@@ -1,8 +1,7 @@
 package string_arrays;
 
-/**
- * Created by ryandesmond on 7/10/17.
- */
+
+import java.util.Random;
 
 /* Write the code to find the smallest sum of any two numbers in a 2 dimensional array int[][] - both of unknown length.
 
@@ -26,4 +25,30 @@ package string_arrays;
 */
 
 public class LocateSmallest2Dim {
+    public static void main(String[] args) {
+
+
+        Random rand = new Random();
+        int n = rand.nextInt(30) + 1;
+        int m = rand.nextInt(30) + 1;
+        int array[][] = new int[n][m];
+        int min1,min2;
+        min1=min2=22222;
+        for (int i=0; i<n; i++) {
+            for (int t=0; t<m; t++) {
+                array[i][t]=rand.nextInt(22222) + 1;
+                System.out.print(array[i][t]+" ");
+                if (array[i][t]<min1){
+                    min1=array[i][t];
+                }
+                else if (array[i][t]<min2){
+                    min2=array[i][t];
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("min1 is: "+min1);
+        System.out.println("min2 is: "+min2);
+
+    }
 }
