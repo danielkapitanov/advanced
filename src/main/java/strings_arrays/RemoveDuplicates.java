@@ -1,5 +1,7 @@
 package strings_arrays;
 
+import java.util.Arrays;
+
 /*
     An array contains 10 numbers. There is exactly one number that is repeated in this array.
     Write a program to find the duplicate number. For example, if an array with length 4 contains numbers
@@ -10,4 +12,30 @@ package strings_arrays;
 
  */
 public class RemoveDuplicates {
-}
+    public static void main(String[] args) {
+
+        int array[] = {0, 1, 2, 3, 4, 5, 1, 7, 8, 9};
+        Arrays.sort(array);
+
+        for (int i=0;i<array.length;i++){
+            System.out.print(array[i]+" ");
+        }
+
+        int j=0;
+            for (int i = 1; i < array.length -1 ; i++, j++) {
+
+                if (array[i] == array[j]) {
+                    System.out.println("Duplicate number is: " + j);
+                    array[j] = -1;
+                }
+
+        }
+
+        for (int i=0;i<array.length;i++){
+            System.out.print(array[i]+" ");
+        }
+
+        }
+    }
+
+

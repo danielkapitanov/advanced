@@ -27,6 +27,7 @@ import java.util.Random;
 */
 
 public class LocateSmallest2Dim {
+
     public static void main(String[] args) {
 
         Random rand = new Random();
@@ -52,4 +53,5 @@ public class LocateSmallest2Dim {
         System.out.println("min2 is: "+min2);
 
     }
+
 }

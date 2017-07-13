@@ -15,6 +15,7 @@ import java.util.GregorianCalendar;
 public class CreateCalendar {
     public static void main(String[] args) {
 
+
         GregorianCalendar c = new GregorianCalendar();
 
 
@@ -22,14 +23,14 @@ public class CreateCalendar {
         System.out.println(format(c, "MMMM dd, yyyy HH:mm"));
 
 
-        int fourHoursInMillis=1000*60*60*4;
+        int fourHoursInMillis = 1000 * 60 * 60 * 4;
 
-        c.setTimeInMillis(c.getTimeInMillis()-fourHoursInMillis);
+        c.setTimeInMillis(c.getTimeInMillis() - fourHoursInMillis);
         System.out.println(format(c, "MMMM dd, yyyy HH:mm"));
 
-        int oneWeekInMillis=1000*60*60*24*7;
+        int oneWeekInMillis = 1000 * 60 * 60 * 24 * 7;
 
-        c.setTimeInMillis(c.getTimeInMillis()+oneWeekInMillis);
+        c.setTimeInMillis(c.getTimeInMillis() + oneWeekInMillis);
         System.out.println(format(c, "MMMM dd, yyyy HH:mm"));
 
         System.out.println(format(c, "yyyy-MM-dd"));
@@ -41,31 +42,32 @@ public class CreateCalendar {
 
     }
 
-    public static String format(GregorianCalendar c, String pattern){
+    public static String format(GregorianCalendar c, String pattern) {
         SimpleDateFormat fmt = new SimpleDateFormat(pattern);
         fmt.setCalendar(c);
         String dateFormatted = fmt.format(c.getTime());
         return dateFormatted;
+
+
+        // Create a Calendar object and set it's date to July 1, 2017.
+
+        // sout(date)
+
+        // Subtract 4 hours from Calendar
+
+        // sout(date)
+
+        // add 1 week to the date
+
+        // sout(date)
+
+        // Format the date to show yyyy-MM-dd (ie, "2017-06-26") using SimpleDateFormat class
+
+        // sout(date)
+
+        // demostrate modifying the format of the date at least two other ways, (ie, "07-04-2017" or "Wed March 26 00:00:00 EST 2017")
+
+        // sout(date)
     }
-
-    // Create a Calendar object and set it's date to July 1, 2017.
-
-    // sout(date)
-
-    // Subtract 4 hours from Calendar
-
-    // sout(date)
-
-    // add 1 week to the date
-
-    // sout(date)
-
-    // Format the date to show yyyy-MM-dd (ie, "2017-06-26") using SimpleDateFormat class
-
-    // sout(date)
-
-    // demostrate modifying the format of the date at least two other ways, (ie, "07-04-2017" or "Wed March 26 00:00:00 EST 2017")
-
-    // sout(date)
 }
 

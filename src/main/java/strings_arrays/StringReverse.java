@@ -7,10 +7,10 @@ public class StringReverse {
     You must pass a single String into the class from the command line
     The main() must print out the contents of the String reverse order
      */
-	public static void main(String str[]){
+	public static void main(String args[]){
 
 
-//		String[] str = { "One", "Two", "Three" };
+		String[] str = { "One", "Two", "Three" };
 
 		for (int i=str.length-1; i>=0;i--) {
 
@@ -23,13 +23,8 @@ public class StringReverse {
 
 			System.out.print(" ");
 
-//			for (int m=0; m<j;m++,j--){
-//				char t = x[m];
-//				x[m]=x[j];
-//				x[j]=t;
-//			}
-
 		}
+		System.out.println();
 		// initialize the string from the args array
 
 		// print out the letters in reverse order
